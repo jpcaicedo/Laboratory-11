@@ -1,0 +1,110 @@
+
+body {
+    font-family: 'Rajdhani', sans-serif; 
+    background-color: #0f1923; 
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #ff4655; 
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.search-bar {
+    margin: 20px 0;
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+    border: 2px solid #ff4655;
+    border-radius: 5px;
+    background-color: #1c252e;
+    color: #ffffff;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+.search-bar::placeholder {
+    color: #888;
+}
+
+.search-bar:focus {
+    border-color: #ff4655;
+    box-shadow: 0 0 10px rgba(255, 70, 85, 0.7);
+}
+
+.agents-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.agent-card {
+    border: 2px solid #1c252e;
+    border-radius: 10px;
+    background-color: #1c252e; 
+    color: #ffffff;
+    width: 300px;
+    padding: 15px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.agent-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 70, 85, 0.7);
+    border-color: #ff4655;
+}
+
+.agent-card img {
+    width: 100%;
+    border-radius: 5px;
+    border-bottom: 2px solid #ff4655;
+    margin-bottom: 10px;
+}
+
+.agent-card h2 {
+    font-size: 1.5rem;
+    margin: 10px 0 5px;
+    color: #ff4655;
+    text-transform: uppercase;
+}
+
+.agent-card p {
+    font-size: 1rem;
+    margin: 5px 0;
+    color: #dcdcdc;
+}
+
+.agent-card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0 0;
+}
+
+.agent-card ul li {
+    margin: 5px 0;
+    color: #ff4655;
+}
+
+.agent-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(255, 70, 85, 0.1), rgba(255, 70, 85, 0.05));
+    opacity: 0.5;
+    z-index: -1;
+}
